@@ -19,7 +19,11 @@ C can be placed before D (500) and M (1000) to make 400 and 900.
 Given a roman numeral, convert it to an integer.
 */
 
-function romanToInt(s) {
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var romanToInt = function(s) {
     const romanToIntObj = {
         'I': 1,
         'V': 5,
@@ -42,7 +46,6 @@ function romanToInt(s) {
             result += currentVal;
         }
     }
-
     return result;
 }
 
